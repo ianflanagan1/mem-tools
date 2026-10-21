@@ -1,0 +1,32 @@
+[project]
+name = "mem-tools"
+version = "0.1.0"
+description = "How close a development machine is to running out of memory, what's using it by app and by project, and what's safe to stop."
+requires-python = ">=3.13"
+dependencies = ["cli-kit", "psutil>=6"]
+
+[project.scripts]
+mem = "mem.__main__:main"
+
+[tool.uv.sources]
+cli-kit = { git = "https://github.com/ianflanagan1/cli-kit", branch = "main" }
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "mem"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
