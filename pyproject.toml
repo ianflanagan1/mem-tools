@@ -9,7 +9,7 @@ dependencies = ["cli-kit", "psutil>=6"]
 mem = "mem.__main__:main"
 
 [tool.uv.sources]
-cli-kit = { git = "https://github.com/ianflanagan1/cli-kit", branch = "main" }
+cli-kit = { git = "https://github.com/ianflanagan1/cli-kit", tag = "v0.1.0" }
 
 [dependency-groups]
 dev = ["pytest>=8", "ruff>=0.6"]
