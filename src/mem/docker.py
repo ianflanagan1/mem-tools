@@ -34,7 +34,7 @@ class Container:
 
 def containers() -> list[Container] | None:
     """The running containers, or None when docker isn't installed or its daemon isn't up."""
-    ids = _docker("ps", "-q", "--no-trunc")
+    ids = _docker("ps", "--quiet", "--no-trunc")
     if ids is None:
         return None
     if not ids.strip():
