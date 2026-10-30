@@ -5,7 +5,7 @@ requires-python = ">=3.13"
 [[package]]
 name = "cli-kit"
 version = "0.1.0"
-source = { git = "https://github.com/ianflanagan1/cli-kit?tag=v0.1.0#22ce8408a536bd3c3998abfe133f52d3ca76d8d3" }
+source = { git = "https://github.com/ianflanagan1/cli-kit?branch=main#dcad32d5b218f3b6e2d95e94e5edd86058cdb839" }
 
 [[package]]
 name = "colorama"
@@ -42,7 +42,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cli-kit", git = "https://github.com/ianflanagan1/cli-kit?tag=v0.1.0" },
+    { name = "cli-kit", git = "https://github.com/ianflanagan1/cli-kit?branch=main" },
     { name = "psutil", specifier = ">=6" },
 ]
 
