@@ -57,7 +57,7 @@ Claude Code's sessions are read from `~/.claude/sessions`, which isn't a documen
 
 ```sh
 cd ~/projects/cli/mem-tools
-devbox run setup   # uv sync, then links mem into ~/.local/bin
-devbox run test    # pytest
-devbox run lint    # ruff check and format
+devbox run -- task setup   # uv sync, then links mem into ~/.local/bin
+devbox run -- task test    # pytest
+devbox run -- task lint    # ruff check and format
 ```
